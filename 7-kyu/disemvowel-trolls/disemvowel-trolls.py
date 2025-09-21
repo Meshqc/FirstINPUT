@@ -1,3 +1,5 @@
 def disemvowel(s):
-    return "".join(ch for ch in s if ch.lower() not in "aeiou" )
-​
+    vow = "aeiouAEIOU"
+    for a in vow:
+        s = s.replace(a,"")
+    return s
